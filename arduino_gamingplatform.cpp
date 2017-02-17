@@ -1,6 +1,6 @@
 #include <Arduino.h>
-#include "StreamBridge.hpp"
-#include "display/display.h"
+#include <StreamBridge.hpp>
+#include <display.h>
 
 display_t display;
 
