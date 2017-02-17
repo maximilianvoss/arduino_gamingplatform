@@ -6,14 +6,15 @@ project(${PROJECT_NAME})
 #set(CMAKE_VERBOSE_MAKEFILE on)
 
 add_subdirectory(display)
-add_subdirectory(wrapper)
+#add_subdirectory(wrapper)
 
-set(${CMAKE_PROJECT_NAME}_SRCS arduino.cpp StreamBridge.cpp StreamBridge.h)
+
+set(${CMAKE_PROJECT_NAME}_SRCS arduino_gamingplatform.cpp StreamBridge.cpp StreamBridge.hpp)
 
 set(${CMAKE_PROJECT_NAME}_BOARD yun)
 set(${CMAKE_PROJECT_NAME}_PORT /dev/cu.usbmodem1421)
 set(${CMAKE_PROJECT_NAME}_PROGRAMMER avrispmkii)
-set(${CMAKE_PROJECT_NAME}_LIBS display wrapper)
+set(${CMAKE_PROJECT_NAME}_LIBS display)
 set(ARDLIBS Bridge)
 
 #print_board_list()
