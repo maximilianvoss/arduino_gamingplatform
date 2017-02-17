@@ -2,3 +2,7 @@
 	path = libs/display
 	url = git@github.com:maximilianvoss/arduino_display.git
 	branch = master
+[submodule "arduino-cmake"]
+	path = arduino-cmake
+	url = git@github.com:maximilianvoss/arduino-cmake.git
+	branch = develop
